@@ -27,4 +27,3 @@ jobs:
           application_name: simple-admin-portal-deployment
           environment_name: Simpleadminportaldeployment-env
           version_label: "v1.0.0"
-          deployment_package: deploy.zip
