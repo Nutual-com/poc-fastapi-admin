@@ -26,4 +26,4 @@ jobs:
           region: ${{ secrets.DEVELOPMENT_AWS_DEFAULT_REGION }}
           application_name: simple-admin-portal-deployment
           environment_name: Simpleadminportaldeployment-env
-          version_label: "v1.0.0"
+          version_label: "v1.1.0"
