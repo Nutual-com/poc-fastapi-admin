@@ -22,7 +22,7 @@ jobs:
         uses: einaregilsson/beanstalk-deploy@v14
         with:
           aws_access_key: ${{ secrets.DEVELOPMENT_AWS_ACCESS_KEY_ID }}
-          aws_secret_key': ${{ secrets.DEVELOPMENT_AWS_SECRET_ACCESS_KEY }}
+          aws_secret_key: ${{ secrets.DEVELOPMENT_AWS_SECRET_ACCESS_KEY }}
           region: ${{ secrets.DEVELOPMENT_AWS_DEFAULT_REGION }}
           application_name: simple-admin-portal-deployment
           environment_name: Simpleadminportaldeployment-env
