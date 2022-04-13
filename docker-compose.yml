@@ -1,0 +1,14 @@
+version: '3'
+services:
+  app:
+    build: .
+    restart: always
+    environment:
+      DATABASE_URL: mysql://root:123456@mysql:3306/fastapi-admin
+      REDIS_URL: redis://redis:6379/0
+    ports:
+      - '8000:8000'
+    depends_on:
+      - mysql
+    image: fastapi-admin
+    command: uvicorn examples.main:app_ --port 8000 --host 0.0.0.0
