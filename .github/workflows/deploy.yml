@@ -21,9 +21,9 @@ jobs:
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v14
         with:
-          aws-access-key-id: ${{ secrets.DEVELOPMENT_AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.DEVELOPMENT_AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.DEVELOPMENT_AWS_DEFAULT_REGION }}
+          aws-access-key: ${{ secrets.DEVELOPMENT_AWS_ACCESS_KEY_ID }}
+          aws-secret-key: ${{ secrets.DEVELOPMENT_AWS_SECRET_ACCESS_KEY }}
+          region: ${{ secrets.DEVELOPMENT_AWS_DEFAULT_REGION }}
           application_name: simple-admin-portal-deployment
           environment_name: Simpleadminportaldeployment-env
           version_label: "v1.0.0"
