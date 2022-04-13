@@ -28,7 +28,3 @@ jobs:
           environment_name: Simpleadminportaldeployment-env
           version_label: "v1.0.0"
           deployment_package: deploy.zip
-          script: |
-            cd /root/fastapi-admin/
-            docker-compose pull
-            docker-compose up -d
